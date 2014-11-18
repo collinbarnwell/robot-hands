@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project 3</title>
+  </head>
+
+  <body onload="main()">
+    <div id='instructions' style='position:absolute; z-index:1;border:solid; border-width:3px; background-color:yellow;margin-top:300px;margin-left:5px;font-family:impact;padding:20px;height:400px;'>
+      <h1>Hello there!</h1>
+      <h3>Directions:</h3>
+      <ol>
+        <li>The arrow keys move the camera parallel to the ground plane.</li>
+        <li>'W' and 'S' move the camera up and down.</li>
+        <li>'A' and 'D' rotate the camera direction about the vertical axis.</li>
+        <li>'Q' and 'E' rotate the camera about the horizontal axis.</li>
+        <li>'I', 'J', 'K' and 'L' move a light source that is suspended above the scene in the cardinal directions, parallel to the ground plane.</li>
+        <li>Hit 'O' to show/hide the grid lines.</li>
+        <li>Hit 'F1' to hide or display these instructions (or 'H', or '1').</li>
+        <li>Enjoy!</li>
+      </ol>
+    </div>
+
+    <canvas id="webgl" width="800" height="800">
+    Please use a browser that supports "canvas"1
+    </canvas>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-mod.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="projectCv2.js"></script>
+    <script src="projectCbufferv2.js"></script>
+  </body>
+</html>
